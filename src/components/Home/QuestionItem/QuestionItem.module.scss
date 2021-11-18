@@ -1,0 +1,22 @@
+@import './../../../Styles/variables.scss';
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $dark-orange-color;
+    padding: 25px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-bottom: 15px;
+    color: white;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+        4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.25s;
+    &:hover {
+        background-color: $light-orange-color;
+    } 
+    &:last-child {
+        margin-bottom: 0;
+    } 
+}

@@ -1,3 +1,5 @@
+@import './../../Styles/variables.scss';
+
 .header { 
     box-shadow: 0 1px 24px 0 rgb(0 0 0 / 14%); 
     display: flex;
@@ -24,7 +26,12 @@
 } 
 
 .block__top {
-    background-color: #34C6CD;
+    background-color: $dark-blue-color;
+    .phone {
+        margin-right: 8px;
+        font-weight: 600;
+        white-space: nowrap;
+    }
 }
 
 .block__bottom {
@@ -33,12 +40,7 @@
 
 .info {
     display: flex; 
-}
-
-.phone {
-    margin-right: 8px;
-    font-weight: 600;
-}
+} 
 
 // BUTTON (START)
 .custom_btn {
@@ -59,10 +61,10 @@
 .btn_style {
     padding: 12px 10px;
     border: none;
-    background: #ff9a40;
+    background: $dark-orange-color;
 }
 .btn_style:hover { 
-    color: #ffb573;
+    color: $light-orange-color;
     background: transparent;
     box-shadow: none;
 }
@@ -74,7 +76,7 @@
     right: 0;
     height: 2px;
     width: 0;
-    background: #ffb573;
+    background: $light-orange-color;
     box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003, 4px 4px 5px 0px #0002;
     transition: 400ms ease all;
 }
@@ -89,4 +91,8 @@
     width: 100%;
     transition: 800ms ease all;
 }
-// BUTTON (END)
+
+.registration_btn {
+    background-color: $darkest-orange-color;
+}
+// BUTTON (END) 

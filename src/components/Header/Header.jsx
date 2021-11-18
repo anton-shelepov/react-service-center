@@ -22,11 +22,11 @@ export default function Header() {
             <div className={s.block__bottom}>
                 <div className={s.wrapper}>
                     <div className={s.logo}>
-                        <span>Сервисный центр ВГУЭС</span>
+                        Сервисный центр ВГУЭС
                     </div>
                     <div className={s.authorize}>
                         <button className={classNames(s.custom_btn, s.btn_style)}>Войти</button>
-                        <button className={classNames(s.custom_btn, s.btn_style)}>Зарегистрироваться</button>
+                        <button className={classNames(s.custom_btn, s.btn_style, s.registration_btn)}>Зарегистрироваться</button>
                     </div>
                 </div>
             </div>
