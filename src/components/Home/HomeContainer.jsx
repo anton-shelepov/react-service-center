@@ -1,20 +1,21 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
-import { getServices } from '../../redux/selectors/home-selector'
+import { getQuestions, getServices } from '../../redux/selectors/home-selector'
 import Home from './Home'
 
 class HomeContainer extends Component { 
     render() { 
         return (
-            <Home services={this.props.services}/> 
+            <Home services={this.props.services} questions={this.props.questions}/> 
         )
     }
 }
 
 const mapStateToProps = (state) => { 
     return {
-        services: getServices(state) 
+        services: getServices(state),
+        questions: getQuestions(state)
     } 
 }
 

@@ -1,0 +1,56 @@
+@import "./../../../Styles/variables.scss";
+
+.questions_items {
+    background-color: $light-blue-color;
+    padding: 28px;
+
+    .item {
+        background-color: white;
+        padding: 25px 20px;
+        border-radius: 15px;
+        cursor: pointer;
+        margin-bottom: 15px;
+        color: black;
+        box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+            4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.25s;
+
+        .question {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+            .title_bold {
+                font-weight: 600;
+            }
+            .icon {
+                transition: transform 0.25s;
+                transform: rotate(230deg);
+                
+            }
+            .icon_selected { 
+                transition: transform 0.25s;
+                transform: rotate(50deg); 
+            }
+        }
+
+        .answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.4s cubic-bezier(0,1,0,1);
+        }
+        .answer_show  {
+            margin-top: 20px;
+            height: auto;
+            overflow: hidden;
+            max-height: 9999px;
+            transition: all 0.4s cubic-bezier(1,0,1,0);
+        }
+
+        &:hover {
+            background-color: rgb(240, 240, 240);
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

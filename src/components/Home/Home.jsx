@@ -1,10 +1,11 @@
 import React from 'react'
-import s from './Home.module.scss'
-import QuiestionItem from './QuestionItem/QuiestionItem'
+import s from './Home.module.scss' 
+import QuestionsItems from './QuestionsItems/QuestionsItems'
 import ServiceItem from './ServiceItem/ServiceItem' 
 
 export default function Home(props) { 
-    let servicesItems = props.services.map(item => <ServiceItem image={item.service_image} description={item.description} />)
+    debugger
+    let servicesItems = props.services.map(item => <ServiceItem image={item.service_image} description={item.description} />) 
 
     return (
         <div className={s.home}>
@@ -23,11 +24,7 @@ export default function Home(props) {
             </div>
             <div className={s.questions}>
                 <div className={s.questions_title}>Часто задаваемые вопросы</div>
-                <div className={s.questions_items}>
-                    <QuiestionItem />
-                    <QuiestionItem />
-                    <QuiestionItem />
-                </div>
+                <QuestionsItems questions={props.questions}/>
             </div>
             <div className={s.support}>
                 <div className={s.block_top}>
