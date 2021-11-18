@@ -1,11 +1,11 @@
 import React from 'react'
 import s from './ServiceItem.module.scss'
 
-export default function ServiceItem() {
+export default function ServiceItem(props) { 
     return (
         <div className={s.item}>
-            <div className={s.image}>Картинка</div>
-            <div className={s.description}>Описание</div>
+            <img className={s.image} src={props.image} alt="service_image" />
+            <div className={s.description}>{props.description}</div>
         </div>
     )
 }

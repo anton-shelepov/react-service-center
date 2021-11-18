@@ -1,30 +1,11 @@
 import React from 'react'
 import s from './Home.module.scss'
 import QuiestionItem from './QuestionItem/QuiestionItem'
-import ServiceItem from './ServiceItem/ServiceItem'
+import ServiceItem from './ServiceItem/ServiceItem' 
 
-const initialState = {
-    items: {
-        item1: {
-            icon: "x",
-            description: "Создать заказ"
-        },
-        item2: {
-            icon: "x",
-            description: "Посмотреть статус заказов"
-        },
-        item3: {
-            icon: "x",
-            description: "Редактировать личные данные"
-        },
-        item4: {
-            icon: "x",
-            description: "Техническая поддержка"
-        }, 
-    }
-}
+export default function Home(props) { 
+    let servicesItems = props.services.map(item => <ServiceItem image={item.service_image} description={item.description} />)
 
-export default function Home() {
     return (
         <div className={s.home}>
             <div className={s.description}>
@@ -33,20 +14,16 @@ export default function Home() {
                 </div>
             </div>
             <div className={s.services_list__items}>
-                <ServiceItem />
-                <ServiceItem />
-                <ServiceItem />
-                <ServiceItem />
-                <ServiceItem />
+                {servicesItems}
             </div>
             <div className={s.service_description}>
-                <div className={s.subtitle}><p>Уже несколько тысяч довольных клиентов воспользовались нашими услугами, обращайся и ты.</p>
+                <div className={s.description_title}><p>Уже несколько тысяч довольных клиентов воспользовались нашими услугами, обращайся и ты.</p>
                     <p>Для постоянных клиентов действуют скидки и дополнительные гарантии.</p>
                 </div>
             </div>
             <div className={s.questions}>
                 <div className={s.questions_title}>Часто задаваемые вопросы</div>
-                <div className={s.question_items}>
+                <div className={s.questions_items}>
                     <QuiestionItem />
                     <QuiestionItem />
                     <QuiestionItem />
