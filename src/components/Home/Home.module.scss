@@ -1,11 +1,11 @@
 @import "./../../Styles/variables.scss";
 
 .home {
-    margin: 20px 0;
+    margin-top: 130px;
     border-radius: 20px;
     background-color: #fff;
-    border: 1px solid rgb(241, 241, 241);
-
+    border: 1px solid rgb(241, 241, 241); 
+    
     .description {
         padding: 55px 28px 10px 28px;
         .title {
@@ -20,8 +20,10 @@
     }
 
     .services_list__items {
-        background-color: $light-blue-color;
+        background-color: $light-cyan-color;
         padding: 28px;
+        margin-right: 100px;
+        border-radius: 0 70px 70px 0;
         display: flex;
         flex-wrap: wrap;
     }
@@ -31,12 +33,12 @@
         padding: 28px 28px 10px 28px;
     }
 
-    .questions {
-        .questions_title {
+    .questions { 
+        .questions_title { 
             font-size: 20px;
             font-weight: 600;
             margin: 35px 0 35px 0;
-            padding-left: 28px;
+            padding-left: 28px; 
         } 
     }
 

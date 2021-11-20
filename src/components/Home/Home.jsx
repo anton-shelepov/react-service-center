@@ -1,18 +1,17 @@
 import React from 'react'
-import s from './Home.module.scss' 
+import s from './Home.module.scss'
 import QuestionsItems from './QuestionsItems/QuestionsItems'
-import ServiceItem from './ServiceItem/ServiceItem' 
+import ServiceItem from './ServiceItem/ServiceItem'
 
-export default function Home(props) { 
-    debugger
-    let servicesItems = props.services.map(item => <ServiceItem image={item.service_image} description={item.description} />) 
+export default function Home(props) {
+
+    let servicesItems = props.services.map(item => <ServiceItem image={item.service_image} description={item.description} link={item.link}/>)
 
     return (
         <div className={s.home}>
             <div className={s.description}>
                 <div className={s.title}>Что мы предлагаем</div>
-                <div className={s.subtitle}>Быстрый и качественный ремонт цифрового и бытового оборудования по низкой цене с гарантией
-                </div>
+                <div className={s.subtitle}>Быстрый и качественный ремонт цифрового и бытового оборудования по низкой цене с гарантией</div>
             </div>
             <div className={s.services_list__items}>
                 {servicesItems}
@@ -24,7 +23,7 @@ export default function Home(props) {
             </div>
             <div className={s.questions}>
                 <div className={s.questions_title}>Часто задаваемые вопросы</div>
-                <QuestionsItems questions={props.questions}/>
+                <QuestionsItems questions={props.questions} />
             </div>
             <div className={s.support}>
                 <div className={s.block_top}>

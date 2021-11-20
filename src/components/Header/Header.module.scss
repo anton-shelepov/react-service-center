@@ -4,6 +4,8 @@
     box-shadow: 0 1px 24px 0 rgb(0 0 0 / 14%); 
     display: flex;
     flex-direction: column; 
+    position: fixed;
+    width: 100%;
     top: 0;
     z-index: 1000; 
     .authorize {
@@ -26,7 +28,8 @@
 } 
 
 .block__top {
-    background-color: $dark-blue-color;
+    background-color: $dark-cyan-color;
+    color: white;
     .phone {
         margin-right: 8px;
         font-weight: 600;
@@ -36,6 +39,11 @@
 
 .block__bottom {
     background-color: #fff;
+    .authorize {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .info {
@@ -46,7 +54,7 @@
 .custom_btn {
     margin-left: 5px;
     padding: 12px 10px;
-    color: black;
+    color: white;
     border-radius: 5px;
     font-weight: 500;
     background: transparent;
@@ -61,10 +69,10 @@
 .btn_style {
     padding: 12px 10px;
     border: none;
-    background: white;
+    background: $dark-cyan-color;
 }
 .btn_style:hover { 
-    color: $light-orange-color;
+    color: $light-cyan-color;
     background: transparent;
     box-shadow: none;
 }
@@ -76,7 +84,7 @@
     right: 0;
     height: 2px;
     width: 0;
-    background: $light-orange-color;
+    background: $light-cyan-color;
     box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003, 4px 4px 5px 0px #0002;
     transition: 400ms ease all;
 }

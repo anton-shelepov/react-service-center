@@ -26,7 +26,7 @@ export default function Header() {
                     </div>
                     <div className={s.authorize}>
                         <button className={classNames(s.custom_btn, s.btn_style)}>Войти</button>
-                        <button className={classNames(s.custom_btn, s.btn_style, s.registration_btn)}>Зарегистрироваться</button>
+                        <button className={classNames(s.custom_btn, s.btn_style)}>Зарегистрироваться</button>
                     </div>
                 </div>
             </div>
