@@ -48,55 +48,17 @@
 
 .info {
     display: flex; 
+    .phone {
+        display: flex;
+        align-items: center;
+        .icon {
+            max-width: 20px;
+            margin-right: 10px; 
+            filter: invert(1); 
+        } 
+    } 
 } 
 
 // BUTTON (START)
-.custom_btn {
-    margin-left: 5px;
-    padding: 12px 10px;
-    color: white;
-    border-radius: 5px;
-    font-weight: 500;
-    background: transparent;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
-        4px 4px 5px 0px rgba(0, 0, 0, 0.1);
-    outline: none;
-}
-.btn_style {
-    padding: 12px 10px;
-    border: none;
-    background: $dark-cyan-color;
-}
-.btn_style:hover { 
-    color: $light-cyan-color;
-    background: transparent;
-    box-shadow: none;
-}
-.btn_style:before,
-.btn_style:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 2px;
-    width: 0;
-    background: $light-cyan-color;
-    box-shadow: -1px -1px 5px 0px #fff, 7px 7px 20px 0px #0003, 4px 4px 5px 0px #0002;
-    transition: 400ms ease all;
-}
-.btn_style:after {
-    right: inherit;
-    top: inherit;
-    left: 0;
-    bottom: 0;
-}
-.btn_style:hover:before,
-.btn_style:hover:after {
-    width: 100%;
-    transition: 800ms ease all;
-} 
+
 // BUTTON (END) 

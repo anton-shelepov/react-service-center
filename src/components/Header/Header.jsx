@@ -1,6 +1,8 @@
 import classNames from 'classnames'
 import React from 'react'
 import s from './Header.module.scss'
+import btn from './../../Styles/buttons-styles.module.scss'
+import phone from './../../images/HeaderImages/phone.png'
 
 export default function Header() {
     return (
@@ -12,7 +14,7 @@ export default function Header() {
                     </div>
                     <div className={s.info}>
                         <div className={s.phone}>
-                            <img rel="phone" href="./images/" />
+                            <img className={s.icon} src={phone} alt="" />
                             <span>8(800)555-35-35</span>
                         </div>
                         <div className={s.woriking_time}>(c 10:00 до 20:00)</div>
@@ -25,8 +27,8 @@ export default function Header() {
                         Сервисный центр ВГУЭС
                     </div>
                     <div className={s.authorize}>
-                        <button className={classNames(s.custom_btn, s.btn_style)}>Войти</button>
-                        <button className={classNames(s.custom_btn, s.btn_style)}>Зарегистрироваться</button>
+                        <button className={classNames(btn.custom_btn, btn.btn_style)}>Войти</button>
+                        <button className={classNames(btn.custom_btn, btn.btn_style)}>Зарегистрироваться</button>
                     </div>
                 </div>
             </div>

@@ -1,20 +1,21 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import { compose } from 'redux'
-import { getOrderImages } from '../../redux/selectors/new-order-selector'
+import { getCardsInfo, getOrderImages } from '../../redux/selectors/new-order-selector'
 import NewOrder from './NewOrder'
 
 class NewOrderContainer extends Component { 
     render() { 
         return (
-            <NewOrder images={this.props.images}/>
+            <NewOrder images={this.props.images} cardsInfo={this.props.cardsInfo}/>
         )
     }
-}
+} 
 
 const mapStateToProps = (state) => { 
     return {
-        images: getOrderImages(state)
+        images: getOrderImages(state),
+        cardsInfo: getCardsInfo(state)
     } 
 }
 

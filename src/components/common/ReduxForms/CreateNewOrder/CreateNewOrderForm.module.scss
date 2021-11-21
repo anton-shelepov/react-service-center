@@ -1,0 +1,186 @@
+@import "./../../../../Styles/variables.scss";
+
+.new_order_form {
+    .wrapper {
+        padding: 48px 28px 28px 28px;
+        font-size: 18px;
+    }
+
+    // TOP CONTENT
+
+    .block__top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 60px;
+    }
+    .order_title {
+        font-size: 30px;
+        font-weight: 600;
+        background-color: $light-cyan-color;
+        padding: 28px;
+        border-radius: 20px 20px 0 0;
+        color: white;
+    }
+
+    .title {
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .subtitle {
+        margin-bottom: 20px;
+    }
+
+    .personal_data,
+    .device_description,
+    .break_description,
+    .additional_services {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .device_description {
+        max-width: 430px;
+        width: 100%;
+        margin-left: auto;
+        .items {
+            margin-right: -28px;
+            border-radius: 60px 0 0 60px;
+        }
+        .title,
+        .subtitle {
+            text-align: right;
+        }
+    }
+    @media screen and (max-width: 1055px) {
+        .device_description {
+            margin-top: 50px;
+        }
+    }
+
+    .personal_data {
+        max-width: 550px;
+        width: 100%;
+        .items {
+            margin-left: -28px;
+            border-radius: 0 60px 60px 0;
+        }
+    }
+
+    .items {
+        background-color: $light-cyan-color;
+        padding: 28px;
+        .item {
+            max-width: 480px;
+            display: flex;
+            margin-bottom: 10px;
+            background-color: white;
+            padding: 10px 10px 10px 20px;
+            border-radius: 10px 0 10px 0;
+            align-items: center;
+            box-shadow: $standard-box-shadow;
+            .item_name {
+                display: flex;
+                margin-right: 10px;
+            }
+            &:last-child {
+                margin-bottom: 0;
+            }
+            img {
+                max-width: 25px;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    // BOTTOM CONTENT
+
+    .block__bottom {
+        .break_description {
+            margin-bottom: 50px;
+            .text_input {
+                background-color: $light-cyan-color;
+                margin: 0 -28px 0 -28px;
+                padding: 28px;
+            }
+        }
+
+        .additional_services {
+            .items {
+                margin-left: -28px;
+                max-width: 550px;
+                border-radius: 0 60px 60px 0;
+                margin-bottom: 50px;
+                .service_item {
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 15px;
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                    .item_name {
+                        max-width: 350px;
+                        display: flex;
+                        justify-content: space-between;
+                        padding: 0;
+                        background-color: white;
+                        box-shadow: $standard-box-shadow;
+                        border-radius: 10px 0 10px 0;
+                        .label {
+                            cursor: pointer;
+                            white-space: nowrap;
+                            padding: 18px;
+                            transition: all 0.2s;
+                            border-radius: 10px 0 10px 0;
+                            &:hover {
+                                box-shadow: inset 2px 2px 2px 0px rgba(129, 129, 129, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
+                            4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .about {
+            .info {
+                background-color: $light-cyan-color;
+                margin: 0 -28px 0 -28px;
+                padding: 28px 28px 28px 0;
+                .info_item {
+                    background-color: white;
+                    box-shadow: $standard-box-shadow;
+                    border-radius: 10px 0 10px 0;
+                    padding: 10px;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+    .form_submit {
+        margin-top: 50px;
+        font-size: 22px;
+        margin-left: auto;
+        margin-right: -28px;
+        padding: 28px;
+        max-width: 250px; 
+        text-align: right;
+        background-color: $light-cyan-color;
+        
+        border-radius: 40px 0 0 40px;
+    }
+
+    // Modificators
+
+    .left {
+        margin-left: -28px;
+        border-radius: 0 40px 40px 0;
+    }
+
+    .right {
+        margin-right: -28px;
+        border-radius: 40px 0 0 40px;
+        float: right;
+    }
+}
