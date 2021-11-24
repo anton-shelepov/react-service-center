@@ -8,11 +8,11 @@ export default function AdditionalServices(props) {
         <div className={s.additional_services}>
             <span className={s.title}>Дополнительные услуги</span>
             <span className={s.subtitle}>Стоимость вывоза оборудования зависит от его габаритов, для уточнения стоимости обратитесь в техническую поддержку сервисного центра</span>
-            <span className={s.subtitle}>Выберите интересующую вас услугу</span>
+            <span className={s.subtitle}>Выберите интересующую услугу</span>
             <div className={s.items}>
                 <div className={s.service_item}>
                     <div className={s.item_name}>
-                        <label className={s.label} htmlFor="delivery">Услуга вывоза оборудования</label>
+                        <label className={s.label} htmlFor="delivery">Доставка оборудования</label>
                     </div>
                     <Field name="delivery" id="delivery" component={Input} type="checkbox" />
                 </div>

@@ -27,8 +27,7 @@ export default function Header() {
                         Сервисный центр ВГУЭС
                     </div>
                     <div className={s.authorize}>
-                        <button className={classNames(btn.custom_btn, btn.btn_style)}>Войти</button>
-                        <button className={classNames(btn.custom_btn, btn.btn_style)}>Зарегистрироваться</button>
+                        <button className={classNames(btn.custom_btn, btn.btn_style)}>Авторизация</button> 
                     </div>
                 </div>
             </div>

@@ -1,0 +1,44 @@
+@import "./../../Styles/variables.scss";
+
+.orders_wrapper {
+    margin-top: 130px;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 1px solid rgb(241, 241, 241);
+    .title {
+        font-size: 30px;
+        font-weight: 600;
+        background-color: #5ccccc;
+        padding: 28px;
+        border-radius: 20px 20px 0 0;
+        color: white;
+    }
+    .content {
+        font-size: 18px;
+        padding: 28px;
+        .content_title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        .content_subtitle {
+            margin-bottom: 28px;
+        }
+        .orders_items {
+            background-color: $light-cyan-color;
+            padding: 28px;
+            margin: 0 -28px 0 -28px;
+        }
+        .new_order {
+            margin-top: 50px;
+            font-size: 22px;
+            margin-left: auto;
+            margin-right: -28px;
+            padding: 28px;
+            max-width: 280px;
+            text-align: right;
+            background-color: $light-cyan-color;
+            border-radius: 40px 0 0 40px;
+        }
+    }
+}

@@ -78,7 +78,7 @@
             margin-bottom: 10px;
             background-color: white;
             padding: 10px 10px 10px 20px;
-            border-radius: 10px 0 10px 0;
+            border-radius: 10px;
             align-items: center;
             box-shadow: $standard-box-shadow;
             .item_name {
@@ -127,13 +127,13 @@
                         padding: 0;
                         background-color: white;
                         box-shadow: $standard-box-shadow;
-                        border-radius: 10px 0 10px 0;
+                        border-radius: 10px;
                         .label {
                             cursor: pointer;
                             white-space: nowrap;
                             padding: 18px;
                             transition: all 0.2s;
-                            border-radius: 10px 0 10px 0;
+                            border-radius: 10px;
                             &:hover {
                                 box-shadow: inset 2px 2px 2px 0px rgba(129, 129, 129, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
                             4px 4px 5px 0px rgba(0, 0, 0, 0.1);
@@ -151,7 +151,7 @@
                 .info_item {
                     background-color: white;
                     box-shadow: $standard-box-shadow;
-                    border-radius: 10px 0 10px 0;
+                    border-radius: 10px;
                     padding: 10px;
                     margin-bottom: 10px;
                 }
@@ -166,8 +166,7 @@
         padding: 28px;
         max-width: 250px; 
         text-align: right;
-        background-color: $light-cyan-color;
-        
+        background-color: $light-cyan-color; 
         border-radius: 40px 0 0 40px;
     }
 

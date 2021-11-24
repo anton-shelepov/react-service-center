@@ -1,64 +1,78 @@
-@import './../../Styles/variables.scss';
+@import "./../../Styles/variables.scss";
 
-.header { 
-    box-shadow: 0 1px 24px 0 rgb(0 0 0 / 14%); 
+.header {
+    box-shadow: 0 1px 24px 0 rgb(0 0 0 / 14%);
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000; 
-    .authorize {
-        display: flex;
-    }
-} 
 
-.wrapper {
-    margin: 0 auto;
-    max-width: 1080px;
-    width: 100%; 
-    justify-content: space-between;
-    padding: 12px 0;
-    display: flex; 
-    align-items: center;
-    .logo {
-        font-size: 25px;
-        font-weight: 700;
-    }
-} 
-
-.block__top {
-    background-color: $dark-cyan-color;
-    color: white;
-    .phone {
-        margin-right: 8px;
-        font-weight: 600;
-        white-space: nowrap;
-    }
-}
-
-.block__bottom {
-    background-color: #fff;
-    .authorize {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-}
-
-.info {
-    display: flex; 
-    .phone {
+    .wrapper {
+        margin: 0 auto;
+        max-width: 1080px;
+        width: 100%;
+        justify-content: space-between;
+        padding: 12px 0;
         display: flex;
         align-items: center;
-        .icon {
-            max-width: 20px;
-            margin-right: 10px; 
-            filter: invert(1); 
-        } 
-    } 
-} 
+        
+        .logo {
+            font-size: 25px;
+            font-weight: 700;
+        }
+    }
 
-// BUTTON (START)
+    .block__top {
+        background-color: $dark-cyan-color;
+        color: white;
 
-// BUTTON (END) 
+        @media screen and (max-width: 587px) {
+            .city {
+                transition: display 0.5s ease-out;
+                display: none;
+            }
+            .info { 
+                display: flex;
+                margin-left: 15px;
+            }
+        }
+
+        .phone {
+            margin-right: 8px;
+            font-weight: 600;
+            white-space: nowrap;
+        }
+    }
+
+    .block__bottom {
+        background-color: #fff;
+        .authorize {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        @media screen and (max-width: 587px) {
+            .logo {
+                margin-left: 15px; 
+            }
+            .authorize {
+                margin-right: 15px;
+            }
+        }
+    }
+
+    .info {
+        display: flex;
+        .phone {
+            display: flex;
+            align-items: center;
+            .icon {
+                max-width: 20px;
+                margin-right: 10px;
+                filter: invert(1);
+            }
+        }
+    }
+}

@@ -19,13 +19,16 @@
             display: flex;
             justify-content: space-between;
             align-items: center; 
+            .title {
+                margin-right: 20px;
+            }
             .title_bold {
+                margin-right: 20px;
                 font-weight: 600;
             }
             .icon {
                 transition: transform 0.25s;
-                transform: rotate(233deg);
-                
+                transform: rotate(233deg); 
             }
             .icon_selected { 
                 transition: transform 0.25s;

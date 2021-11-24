@@ -5,7 +5,7 @@ export default function About(props) {
     return (
         <div className={s.about}>
             <div className={s.title}>Подробнее</div>
-            <div className={s.subtitle}>Перед совершением заказа, внимательно ознакомтесь с информацией представленной ниже</div>
+            <div className={s.subtitle}>Перед совершением заказа, внимательно ознакомтесь с информацией, представленной ниже</div>
             <div className={s.info}>
                 <ul>
                     <li className={s.info_item}>Цена зависит от сложности, окончательная стоимость предварительно согласовывается с клиентом. </li>
