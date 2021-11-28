@@ -1,4 +1,4 @@
-@import "./../../Styles/variables.scss";
+@import "./../../Styles/variables.scss"; 
 
 .header {
     box-shadow: 0 1px 24px 0 rgb(0 0 0 / 14%);
@@ -7,6 +7,8 @@
     position: fixed;
     width: 100%;
     top: 0;
+    right: 0;
+    left: 0;
     z-index: 1000; 
 
     .wrapper {
@@ -26,17 +28,10 @@
 
     .block__top {
         background-color: $dark-cyan-color;
-        color: white;
+        color: white; 
 
         @media screen and (max-width: 587px) {
-            .city {
-                transition: display 0.5s ease-out;
-                display: none;
-            }
-            .info { 
-                display: flex;
-                margin-left: 15px;
-            }
+            display: none; 
         }
 
         .phone {
@@ -59,6 +54,11 @@
             }
             .authorize {
                 margin-right: 15px;
+            }
+        }
+        @media screen and (max-width: 330px){
+            .logo {
+                font-size: 21px;
             }
         }
     }

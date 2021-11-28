@@ -12,8 +12,8 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        margin-bottom: 60px;
-    }
+        margin-bottom: 60px; 
+    } 
     .order_title {
         font-size: 30px;
         font-weight: 600;
@@ -21,6 +21,11 @@
         padding: 28px;
         border-radius: 20px 20px 0 0;
         color: white;
+        display: flex; 
+        .return { 
+            margin-right: 10px; 
+            color: white;
+        }
     }
 
     .title {
@@ -48,6 +53,11 @@
         .items {
             margin-right: -28px;
             border-radius: 60px 0 0 60px;
+            @media screen and (max-width: 499px){
+                padding: 28px 10px;
+                margin-left: -28px; 
+                border-radius: 40px 0 0 40px;
+            }
         }
         .title,
         .subtitle {
@@ -66,12 +76,17 @@
         .items {
             margin-left: -28px;
             border-radius: 0 60px 60px 0;
-        }
+            @media screen and (max-width: 499px){
+                padding: 28px 10px;
+                margin-right: -28px; 
+                border-radius: 0 40px 40px 0;
+            }
+        } 
     }
 
     .items {
         background-color: $light-cyan-color;
-        padding: 28px;
+        padding: 28px; 
         .item {
             max-width: 480px;
             display: flex;
@@ -104,6 +119,9 @@
                 background-color: $light-cyan-color;
                 margin: 0 -28px 0 -28px;
                 padding: 28px;
+                @media screen and (max-width: 499px){
+                    padding: 28px 10px; 
+                }
             }
         }
 
@@ -113,6 +131,11 @@
                 max-width: 550px;
                 border-radius: 0 60px 60px 0;
                 margin-bottom: 50px;
+                @media screen and (max-width: 499px){
+                    padding: 28px 10px; 
+                    margin-right: -28px;
+                    border-radius: 0 40px 40px 0;
+                }
                 .service_item {
                     display: flex;
                     align-items: center;
@@ -135,8 +158,8 @@
                             transition: all 0.2s;
                             border-radius: 10px;
                             &:hover {
-                                box-shadow: inset 2px 2px 2px 0px rgba(129, 129, 129, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1),
-                            4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+                                box-shadow: inset 2px 2px 2px 0px rgba(129, 129, 129, 0.5),
+                                    7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
                             }
                         }
                     }
@@ -152,8 +175,11 @@
                     background-color: white;
                     box-shadow: $standard-box-shadow;
                     border-radius: 10px;
-                    padding: 10px;
-                    margin-bottom: 10px;
+                    padding: 20px;
+                    margin-bottom: 10px; 
+                } 
+                li::marker { 
+                    color: white; 
                 }
             }
         }
@@ -164,9 +190,9 @@
         margin-left: auto;
         margin-right: -28px;
         padding: 28px;
-        max-width: 250px; 
+        max-width: 250px;
         text-align: right;
-        background-color: $light-cyan-color; 
+        background-color: $light-cyan-color;
         border-radius: 40px 0 0 40px;
     }
 

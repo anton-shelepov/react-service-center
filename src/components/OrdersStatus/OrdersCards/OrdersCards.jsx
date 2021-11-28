@@ -9,13 +9,13 @@ export default function OrdersCards(props) {
                     <div className={s.block__top}>
                         <div className={s.device_name}>{item.device_name}</div>
                         <div className={s.order_info}>
-                            <div className={s.status}>Статус: {item.status}</div>
-                            <div className={s.date}>{item.date}</div>
+                            <div className={s.status}>Статус: {item.status}</div> 
                         </div>
                     </div>
                     <div className={s.block__bottom}>
-                        <div className={s.break_description}>{item.break_description}</div>
-                    </div>
+                        <div className={s.break_description}>{item.break_description}</div> 
+                        <div className={s.date}>{item.date}</div>
+                    </div> 
                 </div>
             ))}
 

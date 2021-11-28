@@ -14,8 +14,9 @@
     .block__top {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 22px;
+        padding-bottom: 13px;
         align-items: center; 
+        border-bottom: 1px solid rgb(219, 219, 219);
         .device_name {
             font-size: 22px;
         } 
@@ -27,6 +28,16 @@
                 margin-right: 15px;
                 font-size: 21px;
             }
+        }
+    }
+
+    .block__bottom {
+        margin-top: 13px; 
+        .break_description {
+            margin-bottom: 20px;
+        }
+        .date {
+            float: right;
         }
     }
 }

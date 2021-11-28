@@ -1,7 +1,6 @@
-import React from 'react'
-import { Field } from 'redux-form'
-import s from './../../CreateNewOrderForm.module.scss'
-import { Input } from './../../../../FormsControls/FormsControls.js'
+import React from 'react' 
+import s from './../../CreateNewOrderForm.module.scss' 
+import InputItem from './InputItem/InputItem'
 
 export default function PersonalData(props) {
     return (
@@ -9,27 +8,9 @@ export default function PersonalData(props) {
             <span className={s.title}>Введите ваши персональные данные</span>
             <span className={s.subtitle}>Убедитесь в корректности введенных вами данных, в противном случае заказ не будет оформлен</span>
             <div className={s.items}>
-                <div className={s.item}>
-                    <div className={s.item_name}>
-                        <img src={props.images.full_name} alt="" />
-                        <label className={s.label} htmlFor="full_name">ФИО</label>
-                    </div>
-                    <Field name="full_name" id="full_name" component={Input} />
-                </div>
-                <div className={s.item}>
-                    <div className={s.item_name}>
-                        <img src={props.images.phone} alt="" />
-                        <label className={s.label} htmlFor="phone_number">Телефон</label>
-                    </div>
-                    <Field name="phone_number" id="phone_number" component={Input} />
-                </div>
-                <div className={s.item}>
-                    <div className={s.item_name}>
-                        <img src={props.images.address} alt="" />
-                        <label className={s.label} htmlFor="address">Адрес</label>
-                    </div>
-                    <Field name="address" id="address" component={Input} />
-                </div>
+                <InputItem name="full_name" placeholder="" label="Имя" image={props.images.full_name} />
+                <InputItem name="phone_number" placeholder="" label="Телефон" image={props.images.phone} />
+                <InputItem name="address" placeholder="" label="Адрес" image={props.images.address} />
             </div>
         </div>
     )

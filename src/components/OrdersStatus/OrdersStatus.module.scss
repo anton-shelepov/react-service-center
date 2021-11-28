@@ -1,10 +1,7 @@
 @import "./../../Styles/variables.scss";
 
 .orders_wrapper {
-    margin-top: 130px;
-    border-radius: 20px;
-    background-color: #fff;
-    border: 1px solid rgb(241, 241, 241);
+    
     .title {
         font-size: 30px;
         font-weight: 600;
@@ -12,6 +9,10 @@
         padding: 28px;
         border-radius: 20px 20px 0 0;
         color: white;
+        .return { 
+            margin-right: 10px; 
+            color: white;
+        }
     }
     .content {
         font-size: 18px;
@@ -20,6 +21,7 @@
             font-size: 20px;
             font-weight: 600;
             margin-bottom: 10px;
+            
         }
         .content_subtitle {
             margin-bottom: 28px;

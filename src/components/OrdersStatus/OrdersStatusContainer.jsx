@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import { getOrders } from '../../redux/selectors/oreders-status-selector'
+import { getOrders } from '../../redux/selectors/orders-status-selector'
 import OrdersStatus from './OrdersStatus'
 
 class OrdersStatusContainer extends Component {
