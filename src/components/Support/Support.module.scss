@@ -1,0 +1,51 @@
+@import "./../../Styles/variables.scss";
+
+.support {
+    .support_title {
+        font-size: 30px;
+        font-weight: 600;
+        background-color: #5ccccc;
+        padding: 28px;
+        border-radius: 20px 20px 0 0;
+        color: white; 
+        .return {
+            margin-right: 10px;
+            color: white;
+        }
+    }
+    .wrapper {
+        padding: 28px; 
+        @media screen and (max-width: 499px){
+            padding: 28px 10px; 
+        }
+        .title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px; 
+        }
+        .subtitle {
+            margin-bottom: 20px;
+            font-size: 18px;
+        }
+        .messages { 
+            background-color: $light-cyan-color; 
+            margin: 0 -28px;
+            padding: 28px; 
+            @media screen and (max-width: 499px){
+                margin-right: -10px; 
+                padding-right: 10px;
+            }
+            .messages_wrapper {
+                box-shadow: $standard-box-shadow; 
+                background-color: white;
+                border-radius: 20px;
+                max-width: 800px;
+                margin: 0 auto; 
+                .all_messages { 
+                    min-height: 200px;
+                }
+            }
+            
+        }
+    }
+}

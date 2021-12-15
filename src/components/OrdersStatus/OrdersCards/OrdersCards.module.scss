@@ -7,7 +7,7 @@
     border-radius: 20px;
     padding: 28px;
     background-color: white;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
     &:last-child {
         margin-bottom: 0;
     }
@@ -15,28 +15,34 @@
         display: flex;
         justify-content: space-between;
         padding-bottom: 13px;
-        align-items: center; 
+        align-items: center;
         border-bottom: 1px solid rgb(219, 219, 219);
+        flex-wrap: wrap;
+        font-weight: 600;
         .device_name {
             font-size: 22px;
-        } 
+        }
         .order_info {
             display: flex;
             flex-direction: column;
-            align-items: center; 
-            .status { 
+            align-items: center;
+            .status {
                 margin-right: 15px;
                 font-size: 21px;
+            }
+            @media screen and (max-width: 499px){
+                margin-top: 10px;
             }
         }
     }
 
     .block__bottom {
-        margin-top: 13px; 
+        margin-top: 13px;
         .break_description {
             margin-bottom: 20px;
         }
         .date {
+            font-weight: 600;
             float: right;
         }
     }

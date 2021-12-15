@@ -9,14 +9,14 @@ import BreakDescription from './FormComponents/BlockBottom/BreakDescription';
 import AdditionalServices from './FormComponents/BlockBottom/AdditionalServices';
 import { Link } from 'react-router-dom';
 
-function CreateNewOrder(props) {
+function CreateNewOrder(props) {  
     return (
         <div className={s.new_order_form}>
             <div className={s.order_title}>
-                <Link to="/">
+                <Link to="/"> 
                     <span className={s.return}>↶</span>
                 </Link>
-                Создание нового заказа{' '}
+                Создание нового заказа
             </div>
             <form onSubmit={props.handleSubmit}>
                 <div className={s.wrapper}>
@@ -36,7 +36,7 @@ function CreateNewOrder(props) {
             </form>
         </div>
     );
-}
+} 
 
 export const CreateNewOrderForm = reduxForm({ form: 'create_order' })(
     CreateNewOrder

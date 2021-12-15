@@ -1,0 +1,33 @@
+@import './../../Styles/variables.scss';
+
+.profile_edit { 
+    font-size: 18px;
+    .profile_edit__title {
+        font-size: 30px;
+        font-weight: 600;
+        background-color: #5ccccc;
+        padding: 28px;
+        border-radius: 20px 20px 0 0;
+        color: white;
+
+        .return {
+            margin-right: 10px;
+            color: white;
+        }
+    }
+    .subtitle {
+        margin-bottom: 28px;
+    }
+
+    .content {
+        padding: 28px;
+        @media screen and (max-width: 499px) {
+            padding: 28px 10px;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+    }
+}

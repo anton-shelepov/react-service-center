@@ -3,6 +3,8 @@ import Media from 'react-media'
 import { Field } from 'redux-form'
 import s from './../../../CreateNewOrderForm.module.scss'
 import { Input } from '../../../../../FormsControls/FormsControls'
+import { phoneMask } from '../../../../../FormsControls/Masks' 
+import { fullPhoneNumber, required } from '../../../../../../../utils/validators/validators.js'
 
 export default function InputItem(props) {
     return (
@@ -21,7 +23,10 @@ export default function InputItem(props) {
                     )
                 }
             </Media>
-            <Field name={props.name} id={props.name} placeholder={props.placeholder} component={Input} />
+            {props.name === "phone_number"
+                ? <Field name={props.name} id={props.name} placeholder={props.placeholder} component={Input} validate={fullPhoneNumber} {...phoneMask} />
+                : <Field name={props.name} id={props.name} placeholder={props.placeholder} component={Input} validate={required}/>
+            }
         </div>
     )
 }

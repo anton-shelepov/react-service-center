@@ -1,8 +1,14 @@
+@import './Styles/variables.scss';
+
 .app_wrapper { 
     max-width: 1080px;
     width: 100%; 
     margin: 0 auto; 
     background-color: white;
     border-radius: 20px; 
-    margin-top: 130px;
-}
+    margin-top: 125px;
+    box-shadow:0px 6px 14px 2px rgba(0, 0, 0, 0.068);
+    @media screen and (max-width: 587px) {
+        margin-top: 100px;
+    }
+} 

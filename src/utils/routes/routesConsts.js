@@ -1,0 +1,7 @@
+export const HOME_ROUTE = "/"
+export const NEW_ORDER_ROUTE = "/new-order"
+export const ORDERS_STATUS_ROUTE = "/orders-status"
+export const PROFILE_EDIT_ROUTE = "/profile-edit"
+export const SUPPORT_ROUTE = "/support"
+export const LOGIN_ROUTE = "/login"
+export const REGISTRATION_ROUTE = "/registration"

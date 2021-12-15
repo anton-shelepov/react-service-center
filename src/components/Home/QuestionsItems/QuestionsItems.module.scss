@@ -3,6 +3,9 @@
 .questions_items {
     background-color: $light-cyan-color;
     padding: 28px; 
+    @media screen and (max-width: 499px) {
+        padding: 28px 10px 28px 10px; 
+    }
 
     .item {
         background-color: white;

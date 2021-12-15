@@ -4,6 +4,9 @@
     .wrapper {
         padding: 48px 28px 28px 28px;
         font-size: 18px;
+        @media screen and (max-width: 499px) {
+            padding: 48px 10px 28px 10px;
+        }
     }
 
     // TOP CONTENT
@@ -53,10 +56,10 @@
         .items {
             margin-right: -28px;
             border-radius: 60px 0 0 60px;
-            @media screen and (max-width: 499px){
-                padding: 28px 10px;
-                margin-left: -28px; 
+            @media screen and (max-width: 499px){ 
+                margin: 0 -10px;
                 border-radius: 40px 0 0 40px;
+                padding: 28px 10px;
             }
         }
         .title,
@@ -64,7 +67,7 @@
             text-align: right;
         }
     }
-    @media screen and (max-width: 1055px) {
+    @media screen and (max-width: 1052px) {
         .device_description {
             margin-top: 50px;
         }
@@ -76,10 +79,10 @@
         .items {
             margin-left: -28px;
             border-radius: 0 60px 60px 0;
-            @media screen and (max-width: 499px){
-                padding: 28px 10px;
-                margin-right: -28px; 
+            @media screen and (max-width: 499px){ 
+                margin: 0 -10px;
                 border-radius: 0 40px 40px 0;
+                padding: 28px 10px;
             }
         } 
     }
@@ -94,11 +97,12 @@
             background-color: white;
             padding: 10px 10px 10px 20px;
             border-radius: 10px;
-            align-items: center;
+            align-items: end;
             box-shadow: $standard-box-shadow;
             .item_name {
                 display: flex;
                 margin-right: 10px;
+                margin-bottom: 4px;
             }
             &:last-child {
                 margin-bottom: 0;
@@ -118,11 +122,12 @@
             .text_input {
                 background-color: $light-cyan-color;
                 margin: 0 -28px 0 -28px;
-                padding: 28px;
-                @media screen and (max-width: 499px){
-                    padding: 28px 10px; 
+                padding: 28px; 
+                @media screen and (max-width: 499px){ 
+                    margin-right: -10px; 
+                    padding-right: 10px;
                 }
-            }
+            } 
         }
 
         .additional_services {
@@ -131,9 +136,8 @@
                 max-width: 550px;
                 border-radius: 0 60px 60px 0;
                 margin-bottom: 50px;
-                @media screen and (max-width: 499px){
-                    padding: 28px 10px; 
-                    margin-right: -28px;
+                @media screen and (max-width: 499px){ 
+                    margin-right: -10px;
                     border-radius: 0 40px 40px 0;
                 }
                 .service_item {
@@ -170,7 +174,11 @@
             .info {
                 background-color: $light-cyan-color;
                 margin: 0 -28px 0 -28px;
-                padding: 28px 28px 28px 0;
+                padding: 28px 28px 28px 0; 
+                @media screen and (max-width: 499px){ 
+                    margin-right: -10px; 
+                    padding-right: 10px;
+                }
                 .info_item {
                     background-color: white;
                     box-shadow: $standard-box-shadow;
@@ -194,6 +202,10 @@
         text-align: right;
         background-color: $light-cyan-color;
         border-radius: 40px 0 0 40px;
+        @media screen and (max-width: 499px){ 
+            margin-right: -10px; 
+            padding-right: 10px;
+        }
     }
 
     // Modificators
