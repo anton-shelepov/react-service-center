@@ -88,3 +88,12 @@
     width: 100%;
     transition: 800ms ease all;
 } 
+
+.btn_profile {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0); 
+    box-shadow: none; 
+    font-weight: 600; 
+    text-decoration: underline;
+    min-height: 47px;
+}

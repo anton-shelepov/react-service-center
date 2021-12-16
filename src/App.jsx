@@ -1,37 +1,42 @@
 import { BrowserRouter } from 'react-router-dom'
-import Header from './components/Header/Header';
+import HeaderContainer from './components/Header/HeaderContainer';
 import s from './app.module.scss';
 import Footer from './components/Footer/Footer';
 import { Route, Routes } from 'react-router-dom'
 import { privateRoutes, publicRoutes } from './utils/routes/routes';
 import { Component } from 'react';
-
-class App extends Component{
-
-    componentDidMount() {
-        
-    }
+import { connect } from 'react-redux';
+import { getIsAuth } from './redux/selectors/auth-selector';
+import ScrollToTop from './components/ScrollToTop';
+class App extends Component {
 
     render() {
-        let isAuth = true
         return (
             <BrowserRouter>
-                <div className={s.app}>
-                    <Header />
+                <div className={s.app}> 
+                    <HeaderContainer /> 
                     <div className={s.app_wrapper}>
+
+                        <ScrollToTop />
+
                         <Routes>
                             {
-                                isAuth
+                                this.props.isAuth
                                     ? publicRoutes.map(({ path, Component }) => <Route key={path} path={path} element={<Component />} />)
                                     : privateRoutes.map(({ path, Component }) => <Route key={path} path={path} element={<Component />} />)
                             }
                         </Routes>
+
                         <Footer /> 
                     </div>
                 </div>
             </BrowserRouter>
         );
-    } 
+    }
 }
 
-export default App; 
+const mapStateToProps = (state) => ({
+    isAuth: getIsAuth(state)
+})
+
+export default connect(mapStateToProps)(App)

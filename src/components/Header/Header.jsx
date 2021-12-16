@@ -4,8 +4,13 @@ import s from './Header.module.scss'
 import btn from './../../Styles/buttons-styles.module.scss'
 import phone from './../../images/HeaderImages/phone.png'
 import { Link } from 'react-router-dom'
+import { LOGIN_ROUTE } from '../../utils/routes/routesConsts'
 
-export default function Header() {
+export default function Header(props) { 
+
+    let {isAuth} = props // state
+    let {logout} = props // dispatches 
+    
     return (
         <header className={s.header}>
             <div className={s.block__top}>
@@ -30,7 +35,12 @@ export default function Header() {
                         </div>
                     </Link>
                     <div className={s.authorize}>
-                        <Link to="/login" className={classNames(btn.custom_btn, btn.btn_style)}>Авторизация</Link>
+                        {
+                            isAuth 
+                            ? <button onClick={logout} className={classNames(btn.custom_btn, btn.btn_style, btn.btn_profile)}>Выйти из профиля</button>
+                            : <Link to={LOGIN_ROUTE} className={classNames(btn.custom_btn, btn.btn_style)}>Авторизация</Link>
+                        }
+                        
                     </div>
                 </div>
             </div>

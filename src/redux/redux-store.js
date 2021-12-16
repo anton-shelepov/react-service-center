@@ -1,5 +1,6 @@
 import { applyMiddleware, combineReducers, compose, createStore } from "redux"
 import { reducer as formReducer } from "redux-form";
+import authReducer from "./auth-reducer";
 import homeReducer from "./home-reducer";
 import newOrderReducer from "./new-order-reducer";
 import ordersStatusReducer from "./orders-status-reducer";
@@ -8,7 +9,8 @@ let reducers = combineReducers({
     home: homeReducer,
     newOrder: newOrderReducer,
     ordersStatus: ordersStatusReducer,
-    form: formReducer
+    form: formReducer,
+    auth: authReducer,
 });
 
 

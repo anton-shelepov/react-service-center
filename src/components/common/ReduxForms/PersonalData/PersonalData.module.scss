@@ -21,7 +21,7 @@
             background-color: white;
             border-radius: 10px;
             display: flex; 
-            align-items: end;
+            align-items: flex-end;
             margin-bottom: 10px;
             box-shadow: $standard-box-shadow;
             &:last-child {
@@ -48,7 +48,7 @@
         margin: 50px -28px 0 auto; 
         display: flex;
         align-items: center;
-        justify-content: end; 
+        justify-content: flex-end; 
         font-size: 22px; 
         padding: 28px;
         max-width: 320px;

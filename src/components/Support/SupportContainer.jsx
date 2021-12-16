@@ -10,8 +10,8 @@ class SupportContainer extends Component {
     }
 }
 
-const mapStateToProps = (props) => {
-    
-}
+const mapStateToProps = (props) => ({
+    props
+})
 
 export default connect(mapStateToProps)(SupportContainer)

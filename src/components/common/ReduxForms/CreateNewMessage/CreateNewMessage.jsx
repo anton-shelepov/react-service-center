@@ -9,7 +9,7 @@ export default function CreateNewMessage(props) {
         <Form onSubmit={props.handleSubmit}>
             <div className={s.create_new_message}>
                 <Field name="new_message" placeholder="Введите ваш вопрос..." component={Textarea} />
-                <button className={s.send}><img src={send}></img></button>
+                <button className={s.send}><img src={send} alt="send_image"></img></button>
             </div> 
         </Form>
     )
