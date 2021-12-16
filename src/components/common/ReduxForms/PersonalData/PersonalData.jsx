@@ -12,7 +12,7 @@ function PersonalData(props) {
                 <div className={s.items}>
                     <div className={s.item}>
                         <div className={s.input_name}>
-                            <label className={s.input_name} for="email">E-mail</label>
+                            <label className={s.input_name} htmlFor="email">E-mail</label>
                         </div>
                         <div className={s.input}>
                             <Field name="email" id="email" placeholder="E-mail" component={Input} validate={required} />
@@ -20,7 +20,7 @@ function PersonalData(props) {
                     </div>
                     <div className={s.item}>
                         <div className={s.input_name}>
-                            <label className={s.input_name} for="login">Логин</label>
+                            <label className={s.input_name} htmlFor="login">Логин</label>
                         </div>
                         <div className={s.input}>
                             <Field name="login" id="login" placeholder="Логин" component={Input} validate={required} />
@@ -28,7 +28,7 @@ function PersonalData(props) {
                     </div>
                     <div className={s.item}>
                         <div className={s.input_name}>
-                            <label className={s.input_name} for="password">Ваш старый пароль</label>
+                            <label className={s.input_name} htmlFor="password">Ваш старый пароль</label>
                         </div>
                         <div className={s.input}>
                             <Field name="password" id="password" type="password" placeholder="Введите старый пароль" component={Input} validate={required} />
@@ -36,7 +36,7 @@ function PersonalData(props) {
                     </div>
                     <div className={s.item}>
                         <div className={s.input_name}>
-                            <label className={s.input_name} for="new_password">Ваш новый пароль</label>
+                            <label className={s.input_name} htmlFor="new_password">Ваш новый пароль</label>
                         </div>
                         <div className={s.input}>
                             <Field name="new_password" id="new_password" type="password" placeholder="Введите новый пароль" component={Input} validate={required} />

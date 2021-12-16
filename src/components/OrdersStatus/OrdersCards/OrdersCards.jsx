@@ -5,7 +5,7 @@ export default function OrdersCards(props) {
     return (
         <>
             {props.orders.map(item => (
-                <div className={s.card}>
+                <div key={item.break_description} className={s.card}>
                     <div className={s.block__top}>
                         <div className={s.device_name}>{item.device_name}</div>
                         <div className={s.order_info}>
